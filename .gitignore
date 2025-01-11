@@ -1,0 +1,4 @@
+/target
+
+# don't upload input files, [per the About page](https://adventofcode.com/2024/about)
+input.txt

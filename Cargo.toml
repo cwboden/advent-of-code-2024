@@ -1,0 +1,45 @@
+[workspace]
+members = [
+    "common",
+    "eight",
+    "eighteen",
+    "eleven",
+    "five",
+    "four",
+    "nine",
+    "one",
+    "seven",
+    "six",
+    "support/advent",
+    "support/advent_macro",
+    "support/parse",
+    "support/parse_macro",
+    "ten",
+    "three",
+    "twelve",
+    "two",
+]
+resolver = "2"
+
+[workspace.dependencies]
+combine = "4.6.7"
+
+[workspace.dependencies.advent]
+path = "support/advent"
+
+[workspace.dependencies.common]
+path = "common"
+
+[workspace.dependencies.derive_more]
+features = [
+    "debug",
+    "display",
+]
+version = "1"
+
+[workspace.dependencies.parse]
+path = "support/parse"
+
+[workspace.dependencies.strum]
+features = ["derive"]
+version = "0.26"
